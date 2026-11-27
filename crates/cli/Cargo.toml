@@ -1,0 +1,11 @@
+[package]
+name = "computie-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "computie-cli"
+path = "src/main.rs"
+
+[dependencies]
+computie-core = { path = "../core" }
