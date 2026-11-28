@@ -147,7 +147,7 @@ impl Computie {
                     if let Some(tree) = &self.tree {
                         self.collected = tree.children(Tree::ROOT).skip(3).take(3).map(|(id, _)| id).collect();
                     }
-                    self.trash_collected();
+                    // Only opens the screen. It must never trash anything by itself.
                     self.screen = Screen::Review;
                 }
             }
